@@ -1,6 +1,6 @@
 import express from "express";
 const app = express();
-const port = 4000;
+const port = process.env.PORT;
 
 import { MongoClient } from "mongodb";
 // const MONGO_URL = "mongodb://localhost";
