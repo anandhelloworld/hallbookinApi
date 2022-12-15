@@ -1,11 +1,11 @@
 import express from "express";
 const app = express();
-const port = 4000;
+const port = process.env.PORT||8000;
 
 
 import { MongoClient } from "mongodb";
 // const MONGO_URL = "mongodb://localhost";
-const MONGO_URL = "mongodb://127.0.0.1"; //  nodejs - 16+
+const MONGO_URL = "mongodb+srv://anand:TmF7ogJ1ALhcWFxO@allproject.p2rbwnr.mongodb.net/?retryWrites=true&w=majority"; //  nodejs - 16+
 
 // Node - MongoDB
 async function createConnection() {
